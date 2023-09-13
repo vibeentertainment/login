@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Registration</h1>
+      <form action="register.php" method="POST">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">First Name</label>
+            <input type="text"
+                    id="firstname"
+                    name="firstname"
+                    placeholder="First Name" required />
+          </div>
+          <div class="user-input-box">
+            <label for="firstname">Last name</label>
+            <input type="text"
+                    id="lastname"
+                    name="lastname"
+                    placeholder="Last Name"required />
+          </div>
+		  <div class="user-input-box">
+            <label for="phone">Phone Number</label>
+            <input type="number"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter Phone Number" required />
+          </div>
+		  <div class="user-input-box">
+            <label for="dob">Date of Birth</label>
+            <input type="date"
+                    id="dob"
+                    name="dob"
+                    placeholder="Date of Birth"  required />
+					
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email" required />
+          </div>
+		  
+          <div class="user-input-box">
+            <label for="password">Password</label>
+            <input type="password"
+                    id="password"
+                    name="password" 
+                    placeholder="Enter Password" required />
+          </div>
+          
+        </div>
+        <!--<div class="gender-details-box">
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+          </div>
+        </div>-->
+        <div class="form-submit-btn">
+          <input class="button" type="submit" name="submit" value="Register">
+        </div>
+		 <span><a href="../index.html">Go Back Login</a></span>
+      </form>
+    </div>
+
+     <script >
+	 document.querySelector('.button').onclick = function(){
+	 var password = document.querySelector('.password').value,
+	 confirmpassword = document.querySelector('.confirmpassword').value;
+	 if(password == ""){
+	 alert("Field Cannot be empty.");
+	 }
+	 ele if(password != confirmpassword){
+	 alert("Password Does not Macth try again,")
+	 return true
+	 }
+	 }
+	 </script>      
+       
+  </body>
+</html>
